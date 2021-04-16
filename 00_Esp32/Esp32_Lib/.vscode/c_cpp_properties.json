@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../**"
+            ],
+            "defines": ["ASYNC_API",
+                "ESP32",
+                "HSE_VALUE=8000000",
+                "PLL_M=8",
+                "ESP32_BT_CENTRAL_ENABLE=1",
+                "ESP32_WIFI_SOFTAP_ENABLE=1",
+                "ESP32_BT_ENABLE=0",
+                "ESP32_WIFI_ENABLE=1"], 
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -35,7 +35,7 @@ ErrorCode_t UartDevLinux::init()
     {
         // Set the baud rate of the serial port.
         LOGD("Set baudrate at 921600");
-        this->serial_port.SetBaudRate(BaudRate::BAUD_921600) ;
+        this->serial_port.SetBaudRate(BaudRate::BAUD_115200) ;
 
         // Set the number of data bits.
         this->serial_port.SetCharacterSize(CharacterSize::CHAR_SIZE_8) ;
@@ -146,4 +146,5 @@ LibSerial::BaudRate UartDevLinux::convert_baudrate(Esp32Platform::Baudrate b)
         LOGE("Not support");
         break;
     }
+    return r;
 };
